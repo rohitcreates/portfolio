@@ -22,10 +22,10 @@ const milestones = [
       "Built a foundation in JavaScript, React, API integration, and responsive interfaces through hands-on projects.",
   },
   {
-    year: "2026",
+    year: "2024",
     title: "Web Development Intern",
     description:
-      "Gained practical web development experience at Thought Applied Creations.",
+      "Completed a one-month web development internship at Thought Applied Creations.",
   },
   {
     year: "2026",
