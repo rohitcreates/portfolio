@@ -1,50 +1,61 @@
-# Rohit Singh | Portfolio
+# Rohit Singh | Developer Portfolio
 
-Personal developer portfolio showcasing my projects, technical skills, and experience building modern web applications.
+Personal portfolio showcasing my software projects, technical toolkit, and development experience.
 
-🌐 **Live Website:** https://portfolio-silk-xi-44.vercel.app/
+**Live portfolio:** https://portfolio-silk-xi-44.vercel.app/
 
-## Tech Stack
+## Built with
 
-- Next.js
-- React
+- Next.js 16
+- React 19
 - TypeScript
-- Tailwind CSS
+- Tailwind CSS 4
+- Motion
 
-## Features
+## Featured projects
 
-- Responsive portfolio design
-- Modern UI with interactive elements
-- Project showcase
-- Skills and technology overview
-- Responsive navigation
-- Deployed with Vercel
+| Project | Description | Repository |
+| --- | --- | --- |
+| NovaFlow | Full-stack workspace and project management application | [GitHub](https://github.com/rohitcreates/NovaFlow) |
+| Vanta Studio | Full-stack e-commerce application using Next.js, Prisma, and PostgreSQL | [GitHub](https://github.com/rohitcreates/vanta-studio) |
+| CineScope | React movie discovery application powered by TMDB | [GitHub](https://github.com/rohitcreates/cineScope) |
 
-## Getting Started
+## Run locally
 
-### Prerequisites
+### Requirements
 
-- Node.js
+- Node.js (LTS)
 - npm
 
-### Installation
-
-Clone the repository:
+### Setup
 
 ```bash
 git clone https://github.com/rohitcreates/portfolio.git
 cd portfolio
-
-Install dependencies:
 npm install
-
-Run the development server:
 npm run dev
+```
 
-Open http://localhost:3000 in your browser.
-Deployment
-The portfolio is deployed using Vercel.
-Author
-Rohit Singh
+Open http://localhost:3000.
+
+## Available scripts
+
+| Command | Purpose |
+| --- | --- |
+| `npm run dev` | Start the development server |
+| `npm run build` | Create a production build |
+| `npm run start` | Start the production server |
+| `npm run lint` | Run ESLint |
+
+## Deployment
+
+Deployed on Vercel.
+
+## Contact
+
 - GitHub: https://github.com/rohitcreates
-- Portfolio: https://portfolio-silk-xi-44.vercel.app/
+- Email: rohitsingh93509@gmail.com
+
+---
+
+Built by Rohit Singh.
