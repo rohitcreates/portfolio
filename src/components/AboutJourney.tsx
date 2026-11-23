@@ -10,6 +10,12 @@ const milestones = [
       "Started my B.Tech in Computer Science & Engineering.",
   },
   {
+    year: "2024",
+    title: "Web Development Intern",
+    description:
+      "Completed a one-month web development internship at Thought Applied Creations.",
+  },
+  {
     year: "2025",
     title: "Python Development Intern",
     description:
@@ -20,12 +26,6 @@ const milestones = [
     title: "Frontend Development",
     description:
       "Built a foundation in JavaScript, React, API integration, and responsive interfaces through hands-on projects.",
-  },
-  {
-    year: "2024",
-    title: "Web Development Intern",
-    description:
-      "Completed a one-month web development internship at Thought Applied Creations.",
   },
   {
     year: "2026",
