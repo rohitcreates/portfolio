@@ -15,7 +15,7 @@ const milestones = [
     year: "2024",
     title: "Web Development Intern",
     description:
-      "Gained practical web development experience at Thought Applied Creations.",
+      "Completed a one-month web development internship at Thought Applied Creations.",
     icon: "</>",
   },
   {
