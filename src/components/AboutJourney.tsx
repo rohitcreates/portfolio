@@ -4,58 +4,52 @@ import { useRef, useState } from "react";
 
 const milestones = [
   {
-    year: "JUN 2025",
-    title: "The Beginning",
+    year: "2022",
+    title: "A new chapter",
     description:
-      "Started learning web development with HTML and CSS, building the foundation for everything that followed.",
+      "Started my B.Tech in Computer Science & Engineering. It opened the door to a much bigger world of ideas, systems, and things I wanted to understand.",
+  },
+  {
+    year: "2024",
+    title: "First web experience",
+    description:
+      "Completed a one-month web development internship at Thought Applied Creations and got an early taste of working on the web in a professional setting.",
   },
   {
     year: "2025",
-    title: "JavaScript",
+    title: "A Python detour",
     description:
-      "Moved into JavaScript and began building interactive applications rather than only static pages.",
+      "Completed a six-month unpaid internship at Rays IT & Design World, working with Python and building a Student Data Management System.",
   },
   {
     year: "2025–2026",
-    title: "Frontend",
+    title: "Learning by making",
     description:
-      "Focused on frontend development and learned to turn ideas into complete, functional interfaces.",
+      "Spent more time building with JavaScript and React, exploring APIs, and learning how a collection of small pieces becomes a useful interface.",
   },
   {
     year: "2026",
     title: "CineScope",
     description:
-      "Built CineScope, my first proper project, and put my frontend skills into practice.",
+      "Made a movie discovery experience with React and the TMDB API, bringing together search, movie details, trailers, cast information, similar titles, and favourites.",
   },
   {
     year: "2026",
-    title: "Internship",
+    title: "Vanta Studio",
     description:
-      "Gained practical development experience through a one-month internship at Thought Applied Creations.",
+      "Explored the many moving parts of an e-commerce application, including customer accounts, product discovery, cart and wishlist flows, and an admin interface.",
   },
   {
     year: "2026",
-    title: "Backend",
-    description:
-      "Expanded into backend development and built Vanta Studio while learning server-side development, databases, and application architecture.",
-  },
-  {
-    year: "2026",
-    title: "Full-stack",
-    description:
-      "Started bringing frontend and backend development together to build complete applications.",
-  },
-  {
-    year: "AUG 2026",
     title: "NovaFlow",
     description:
-      "Started building NovaFlow, a full-stack workspace and project management application.",
+      "Took on a larger workspace and project management idea, bringing together workspaces, roles, projects, tasks, documentation, and collaboration features.",
   },
   {
     year: "NOW",
-    title: "Still Building",
+    title: "More to explore",
     description:
-      "Continuing to grow as a MERN full-stack developer while learning, experimenting, and building new things.",
+      "Still learning, experimenting, and making things. There are plenty of ideas left to chase and plenty of things I haven't figured out yet.",
   },
 ];
 
@@ -66,61 +60,43 @@ export default function AboutJourney() {
 
   function handleScroll() {
     const element = scrollRef.current;
-
     if (!element) return;
 
     const maxScroll = element.scrollHeight - element.clientHeight;
-
     setProgress(maxScroll > 0 ? element.scrollTop / maxScroll : 0);
   }
 
   return (
     <section className="px-6 py-28 lg:px-10">
       <div className="mx-auto max-w-7xl">
-        {/* Header */}
         <div className="mb-14">
           <p className="text-xs uppercase tracking-[0.35em] text-[var(--accent)]">
-            Journey
+            Along the way
           </p>
-
           <h2 className="mt-5 text-5xl font-medium tracking-tight sm:text-6xl lg:text-7xl">
-            How I got here.
+            The longer version.
           </h2>
-
           <p className="mt-6 max-w-xl text-base leading-8 text-white/40">
-            From writing my first lines of HTML to building full-stack
-            applications.
+            A collection of experiences and projects that have taught me something along the way.
           </p>
         </div>
 
-        {/* Scroll container */}
         <div
           className={[
             "relative overflow-hidden rounded-[28px] transition-all duration-500",
-            isActive
-              ? "shadow-[0_0_80px_rgba(124,58,237,0.08)]"
-              : "",
+            isActive ? "shadow-[0_0_80px_rgba(124,58,237,0.08)]" : "",
           ].join(" ")}
         >
-          {/* Base border */}
           <div className="pointer-events-none absolute inset-0 rounded-[28px] border border-white/[0.08]" />
 
-          {/* Progress border */}
           <div
+            aria-hidden="true"
             className="pointer-events-none absolute inset-0 rounded-[28px]"
             style={{
-              background: `conic-gradient(
-                from 0deg,
-                var(--accent) 0deg,
-                var(--accent) ${progress * 360}deg,
-                transparent ${progress * 360}deg,
-                transparent 360deg
-              )`,
+              background: `conic-gradient(from 0deg, var(--accent) 0deg, var(--accent) ${progress * 360}deg, transparent ${progress * 360}deg, transparent 360deg)`,
               padding: "1px",
-              mask:
-                "linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)",
-              WebkitMask:
-                "linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)",
+              mask: "linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)",
+              WebkitMask: "linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)",
               maskComposite: "exclude",
               WebkitMaskComposite: "xor",
               opacity: isActive ? 1 : 0.35,
@@ -128,7 +104,6 @@ export default function AboutJourney() {
             }}
           />
 
-          {/* Scrollable area */}
           <div
             ref={scrollRef}
             onScroll={handleScroll}
@@ -138,30 +113,23 @@ export default function AboutJourney() {
           >
             <div className="mx-auto max-w-4xl">
               <div className="relative">
-                {/* Timeline line */}
                 <div className="absolute bottom-8 left-[15px] top-8 w-px bg-white/[0.08]" />
-
                 <div className="space-y-10">
-                  {milestones.map((milestone, index) => (
+                  {milestones.map((milestone) => (
                     <article
-                      key={`${milestone.year}-${milestone.title}`}
+                      key={milestone.title}
                       className="relative grid grid-cols-[32px_1fr] gap-6"
                     >
-                      {/* Timeline node */}
                       <div className="relative flex justify-center">
                         <span className="relative z-10 mt-6 h-2.5 w-2.5 rounded-full border border-[var(--accent)] bg-[#09080d] shadow-[0_0_18px_var(--accent-glow)]" />
                       </div>
-
-                      {/* Milestone */}
                       <div className="border-b border-white/[0.06] pb-10">
                         <p className="text-xs tracking-[0.3em] text-[var(--accent)]">
                           {milestone.year}
                         </p>
-
                         <h3 className="mt-3 text-2xl font-medium tracking-tight text-white sm:text-3xl">
                           {milestone.title}
                         </h3>
-
                         <p className="mt-4 max-w-2xl text-sm leading-7 text-white/40 sm:text-base">
                           {milestone.description}
                         </p>
@@ -170,7 +138,6 @@ export default function AboutJourney() {
                   ))}
                 </div>
               </div>
-
               <p className="mt-10 text-center text-[10px] uppercase tracking-[0.35em] text-white/20">
                 Scroll to explore
               </p>
