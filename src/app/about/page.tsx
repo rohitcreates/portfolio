@@ -7,12 +7,12 @@ export default function AboutPage() {
       <section className="px-6 pb-24 pt-36 lg:px-10">
         <div className="mx-auto max-w-7xl">
           <p className="mb-5 text-xs uppercase tracking-[0.35em] text-[var(--accent)]">
-            About
+            A little about me
           </p>
           <h1 className="max-w-5xl text-5xl font-medium tracking-tight sm:text-6xl lg:text-7xl">
-            Building things,
+            Many interests.
             <br />
-            learning as I go.
+            One curious mind.
           </h1>
 
           <div className="mt-10 grid gap-10 lg:grid-cols-[0.8fr_1.2fr]">
@@ -23,14 +23,20 @@ export default function AboutPage() {
             </div>
             <div className="max-w-2xl">
               <p className="text-lg leading-8 text-white/55">
-                I&apos;m a computer science student focused on building
-                full-stack applications and turning ideas into working
-                products.
+                I&apos;m a computer science student who enjoys making things,
+                understanding how they work, and following an idea far enough
+                to see what it can become.
               </p>
               <p className="mt-6 text-base leading-8 text-white/40">
-                I learn primarily by building. Each project has been a step
-                toward understanding how modern applications work from the
-                interface all the way to the backend.
+                A lot of that curiosity finds its way into web projects. It
+                also finds its way into writing: I enjoy creating stories and
+                imaginary worlds just as much as I enjoy figuring out how to
+                bring an application to life.
+              </p>
+              <p className="mt-6 text-base leading-8 text-white/40">
+                This site is a home for some of those experiments, projects,
+                and chapters. It&apos;s a work in progress, much like the person
+                behind it.
               </p>
             </div>
           </div>
@@ -45,27 +51,19 @@ export default function AboutPage() {
           <div className="grid gap-12 lg:grid-cols-[0.8fr_1.2fr]">
             <div>
               <p className="text-xs uppercase tracking-[0.3em] text-[var(--accent)]">
-                Education
+                Currently
               </p>
             </div>
             <div>
               <h2 className="text-3xl font-medium tracking-tight sm:text-4xl">
-                B.Tech in Computer Science &amp; Engineering
+                Still learning. Still making.
               </h2>
-              <p className="mt-4 text-sm uppercase tracking-[0.2em] text-white/30">
-                SSIPMT Raipur · Expected graduation 2027
+              <p className="mt-5 max-w-2xl text-lg leading-8 text-white/50">
+                I&apos;m studying Computer Science &amp; Engineering at SSIPMT
+                Raipur, with an expected graduation year of 2027. Lately,
+                I&apos;ve been spending time with TypeScript, backend development,
+                databases, and the details that make applications work well.
               </p>
-
-              <div className="mt-16 border-t border-[var(--border-soft)] pt-8">
-                <p className="text-xs uppercase tracking-[0.3em] text-[var(--accent)]">
-                  Current focus
-                </p>
-                <p className="mt-5 max-w-2xl text-lg leading-8 text-white/50">
-                  Strengthening full-stack engineering, backend development,
-                  TypeScript, databases, and problem solving while building
-                  practical web applications.
-                </p>
-              </div>
             </div>
           </div>
         </div>
