@@ -6,37 +6,37 @@ import { useRef, useState } from "react";
 const milestones = [
   {
     year: "2022",
-    title: "CSE Degree",
+    title: "A new chapter",
     description:
-      "Started my B.Tech in Computer Science & Engineering.",
+      "Started my B.Tech in Computer Science & Engineering and began exploring the many corners of computing.",
     icon: "⌘",
   },
   {
     year: "2024",
-    title: "Web Development Intern",
+    title: "First web experience",
     description:
-      "Completed a one-month web development internship at Thought Applied Creations.",
+      "Spent a month at Thought Applied Creations as a web development intern and got an early look at working on the web beyond tutorials.",
     icon: "</>",
   },
   {
     year: "2025",
-    title: "Python Development Intern",
+    title: "Exploring Python",
     description:
-      "Completed a six-month unpaid internship at Rays IT & Design World, working with Python and building a Student Data Management System.",
+      "During a six-month unpaid internship at Rays IT & Design World, worked with Python and built a Student Data Management System.",
     icon: "⌬",
   },
   {
     year: "2025–2026",
-    title: "Frontend Development",
+    title: "Finding my way with React",
     description:
-      "Built a foundation in JavaScript, React, APIs, and responsive user interfaces through hands-on projects.",
+      "Started making more of my own things, learning JavaScript, React, APIs, and how to turn an idea into an interface people can use.",
     icon: "✦",
   },
   {
     year: "2026",
-    title: "Full-Stack Projects",
+    title: "Bigger ideas, bigger builds",
     description:
-      "Expanded into backend development, databases, authentication, and application architecture through Vanta Studio and NovaFlow.",
+      "NovaFlow and Vanta Studio became opportunities to explore the moving parts behind larger applications. CineScope kept the curiosity going on the frontend.",
     icon: "↗",
   },
 ];
@@ -64,13 +64,13 @@ export default function JourneyPreview() {
         <div className="mb-20 flex items-end justify-between gap-8">
           <div>
             <p className="text-xs uppercase tracking-[0.35em] text-[#9b5cff]">
-              Journey
+              Along the way
             </p>
             <h2 className="mt-5 text-5xl font-medium tracking-tight text-white sm:text-6xl lg:text-7xl">
-              How I got here.
+              A few chapters.
             </h2>
             <p className="mt-6 max-w-lg text-base leading-7 text-white/35">
-              A few milestones from my computer science degree to building full-stack applications.
+              Some experiences, experiments, and projects that have shaped what I make today.
             </p>
           </div>
 
@@ -78,7 +78,7 @@ export default function JourneyPreview() {
             href="/about"
             className="hidden text-sm text-white/40 transition-colors hover:text-white sm:block"
           >
-            Full journey ↗
+            More about me ↗
           </Link>
         </div>
 
@@ -208,7 +208,7 @@ export default function JourneyPreview() {
             href="/about"
             className="text-xs uppercase tracking-[0.3em] text-white/30 transition-colors hover:text-[#a970ff]"
           >
-            View full journey ↗
+            Get to know me ↗
           </Link>
         </div>
       </div>
