@@ -13,30 +13,30 @@ const milestones = [
   },
   {
     year: "2024",
-    title: "Intern Developer",
+    title: "Web Development Intern",
     description:
-      "Web Development at Thought Applied Creations.",
+      "Gained practical web development experience at Thought Applied Creations.",
     icon: "</>",
   },
   {
     year: "2025",
-    title: "Python Training",
+    title: "Python Development Intern",
     description:
-      "Vocational training in Python with a Student Data Management System project at Rays IT & Design World.",
+      "Completed a six-month unpaid internship at Rays IT & Design World, working with Python and building a Student Data Management System.",
     icon: "⌬",
   },
   {
-    year: "NOV 2025",
-    title: "The Shift",
+    year: "2025–2026",
+    title: "Frontend Development",
     description:
-      "Started taking software development seriously and building toward a professional career.",
+      "Built a foundation in JavaScript, React, APIs, and responsive user interfaces through hands-on projects.",
     icon: "✦",
   },
   {
     year: "2026",
-    title: "Building",
+    title: "Full-Stack Projects",
     description:
-      "Building modern web applications and progressing toward full-stack development.",
+      "Expanded into backend development, databases, authentication, and application architecture through Vanta Studio and NovaFlow.",
     icon: "↗",
   },
 ];
@@ -61,20 +61,16 @@ export default function JourneyPreview() {
   return (
     <section className="relative overflow-hidden px-6 py-36 lg:px-10">
       <div className="mx-auto max-w-[1500px]">
-
-        {/* Header */}
         <div className="mb-20 flex items-end justify-between gap-8">
           <div>
             <p className="text-xs uppercase tracking-[0.35em] text-[#9b5cff]">
               Journey
             </p>
-
             <h2 className="mt-5 text-5xl font-medium tracking-tight text-white sm:text-6xl lg:text-7xl">
               How I got here.
             </h2>
-
             <p className="mt-6 max-w-lg text-base leading-7 text-white/35">
-              A few milestones that shaped the way I build.
+              A few milestones from my computer science degree to building full-stack applications.
             </p>
           </div>
 
@@ -86,10 +82,7 @@ export default function JourneyPreview() {
           </Link>
         </div>
 
-        {/* Timeline container */}
         <div className="relative rounded-[30px] border border-[#9b5cff]/20 bg-[#09080d]/70 py-14 shadow-[0_0_100px_rgba(124,58,237,0.05)]">
-
-          {/* Arrow controls */}
           <button
             type="button"
             onClick={() => scrollTimeline("left")}
@@ -108,46 +101,34 @@ export default function JourneyPreview() {
             →
           </button>
 
-          {/* Horizontal viewport */}
           <div
             ref={timelineRef}
             onWheel={handleWheel}
             className="overflow-x-auto overscroll-x-contain scrollbar-none"
           >
             <div className="min-w-[2100px] px-16">
-
-              {/* Timeline */}
               <div className="relative">
-
-                {/* Base line */}
                 <div className="absolute left-[190px] right-[190px] top-[30px] h-px bg-white/[0.08]" />
-
-                {/* Purple path */}
                 <div className="absolute left-[190px] right-[190px] top-[30px] h-px bg-gradient-to-r from-[#9b5cff]/10 via-[#9b5cff]/40 to-[#9b5cff]/10 shadow-[0_0_15px_rgba(155,92,255,0.3)]" />
 
-                {/* Years + nodes */}
                 <div className="relative flex justify-between px-[120px]">
-
                   {milestones.map((milestone, index) => {
                     const active = activeIndex === index;
 
                     return (
                       <div
-                        key={milestone.year}
+                        key={milestone.title}
                         className="flex w-[380px] shrink-0 flex-col items-center"
                       >
                         <p
                           className={[
                             "mb-5 text-xs tracking-[0.3em] transition-colors duration-300",
-                            active
-                              ? "text-[#b58cff]"
-                              : "text-white/35",
+                            active ? "text-[#b58cff]" : "text-white/35",
                           ].join(" ")}
                         >
                           {milestone.year}
                         </p>
 
-                        {/* Node */}
                         <div className="relative z-10">
                           <span
                             className={[
@@ -157,13 +138,11 @@ export default function JourneyPreview() {
                                 : "border-white/30",
                             ].join(" ")}
                           />
-
                           {active && (
                             <span className="absolute inset-[-10px] rounded-full bg-[#9b5cff]/15 blur-md" />
                           )}
                         </div>
 
-                        {/* Card */}
                         <article
                           onMouseEnter={() => setActiveIndex(index)}
                           onMouseLeave={() => setActiveIndex(null)}
@@ -174,7 +153,6 @@ export default function JourneyPreview() {
                               : "border-white/[0.08] bg-white/[0.015]",
                           ].join(" ")}
                         >
-                          {/* Icon */}
                           <div
                             className={[
                               "flex h-12 w-12 items-center justify-center rounded-xl border text-sm transition-all duration-500",
@@ -189,9 +167,7 @@ export default function JourneyPreview() {
                           <h3
                             className={[
                               "mt-8 text-2xl font-medium transition-colors",
-                              active
-                                ? "text-white"
-                                : "text-white/80",
+                              active ? "text-white" : "text-white/80",
                             ].join(" ")}
                           >
                             {milestone.title}
@@ -200,18 +176,14 @@ export default function JourneyPreview() {
                           <div
                             className={[
                               "mt-5 h-px transition-all duration-500",
-                              active
-                                ? "w-12 bg-[#a970ff]"
-                                : "w-6 bg-white/15",
+                              active ? "w-12 bg-[#a970ff]" : "w-6 bg-white/15",
                             ].join(" ")}
                           />
 
                           <p
                             className={[
                               "mt-6 max-w-[300px] text-base leading-7 transition-colors",
-                              active
-                                ? "text-white/55"
-                                : "text-white/30",
+                              active ? "text-white/55" : "text-white/30",
                             ].join(" ")}
                           >
                             {milestone.description}
@@ -223,7 +195,6 @@ export default function JourneyPreview() {
                 </div>
               </div>
 
-              {/* Interaction hint */}
               <div className="mt-14 flex items-center justify-center gap-3 text-[10px] uppercase tracking-[0.35em] text-white/20">
                 <span className="text-sm">↔</span>
                 Scroll to explore
@@ -232,7 +203,6 @@ export default function JourneyPreview() {
           </div>
         </div>
 
-        {/* Full journey */}
         <div className="mt-12 flex justify-center">
           <Link
             href="/about"
