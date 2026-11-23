@@ -5,51 +5,51 @@ import { useRef, useState } from "react";
 const milestones = [
   {
     year: "2022",
-    title: "CSE Degree",
+    title: "A new chapter",
     description:
-      "Started my B.Tech in Computer Science & Engineering.",
+      "Started my B.Tech in Computer Science & Engineering. It opened the door to a much bigger world of ideas, systems, and things I wanted to understand.",
   },
   {
     year: "2024",
-    title: "Web Development Intern",
+    title: "First web experience",
     description:
-      "Completed a one-month web development internship at Thought Applied Creations.",
+      "Completed a one-month web development internship at Thought Applied Creations and got an early taste of working on the web in a professional setting.",
   },
   {
     year: "2025",
-    title: "Python Development Intern",
+    title: "A Python detour",
     description:
       "Completed a six-month unpaid internship at Rays IT & Design World, working with Python and building a Student Data Management System.",
   },
   {
     year: "2025–2026",
-    title: "Frontend Development",
+    title: "Learning by making",
     description:
-      "Built a foundation in JavaScript, React, API integration, and responsive interfaces through hands-on projects.",
+      "Spent more time building with JavaScript and React, exploring APIs, and learning how a collection of small pieces becomes a useful interface.",
   },
   {
     year: "2026",
     title: "CineScope",
     description:
-      "Built a movie discovery application with React and the TMDB API, including search, movie details, trailers, and favourites.",
+      "Made a movie discovery experience with React and the TMDB API, bringing together search, movie details, trailers, cast information, similar titles, and favourites.",
   },
   {
     year: "2026",
     title: "Vanta Studio",
     description:
-      "Built a full-stack e-commerce application and worked with authentication, server-side authorization, Prisma, and PostgreSQL.",
+      "Explored the many moving parts of an e-commerce application, including customer accounts, product discovery, cart and wishlist flows, and an admin interface.",
   },
   {
     year: "2026",
     title: "NovaFlow",
     description:
-      "Built a workspace and project management application with authentication, roles, projects, tasks, documentation, and collaboration features.",
+      "Took on a larger workspace and project management idea, bringing together workspaces, roles, projects, tasks, documentation, and collaboration features.",
   },
   {
     year: "NOW",
-    title: "Still Building",
+    title: "More to explore",
     description:
-      "Continuing to strengthen full-stack engineering, TypeScript, backend development, databases, and problem solving.",
+      "Still learning, experimenting, and making things. There are plenty of ideas left to chase and plenty of things I haven't figured out yet.",
   },
 ];
 
@@ -71,13 +71,13 @@ export default function AboutJourney() {
       <div className="mx-auto max-w-7xl">
         <div className="mb-14">
           <p className="text-xs uppercase tracking-[0.35em] text-[var(--accent)]">
-            Journey
+            Along the way
           </p>
           <h2 className="mt-5 text-5xl font-medium tracking-tight sm:text-6xl lg:text-7xl">
-            How I got here.
+            The longer version.
           </h2>
           <p className="mt-6 max-w-xl text-base leading-8 text-white/40">
-            From my computer science degree to internships and building full-stack applications.
+            A collection of experiences and projects that have taught me something along the way.
           </p>
         </div>
 
