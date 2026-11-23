@@ -5,18 +5,18 @@ import { useRef } from "react";
 
 const skillGroups = [
   {
-    title: "Frontend",
-    description: "Building responsive interfaces and interactive experiences.",
+    title: "On the screen",
+    description: "The tools behind the interfaces and experiences I make.",
     skills: ["React", "Next.js", "JavaScript", "TypeScript", "Tailwind CSS", "Vite"],
   },
   {
-    title: "Backend & data",
-    description: "Developing application logic, APIs, authentication, and data flows.",
+    title: "Behind the scenes",
+    description: "The pieces I've been exploring to make applications work end to end.",
     skills: ["Node.js", "Express", "REST APIs", "MongoDB", "PostgreSQL", "Prisma"],
   },
   {
-    title: "Tools & workflow",
-    description: "The tools I use to build, manage, and ship projects.",
+    title: "Everyday tools",
+    description: "A few familiar companions in the process of making things.",
     skills: ["Git", "GitHub"],
   },
 ];
@@ -49,13 +49,13 @@ export default function SkillArsenal() {
       <div className="relative mx-auto max-w-6xl">
         <div className="mb-16 text-center">
           <p className="text-xs uppercase tracking-[0.35em] text-[#a970ff]">
-            Technical toolkit
+            My toolkit
           </p>
           <h2 className="mt-5 text-4xl font-medium tracking-tight text-white sm:text-5xl lg:text-6xl">
-            Tools I work with.
+            Things I like working with.
           </h2>
           <p className="mx-auto mt-5 max-w-2xl text-base leading-7 text-white/45">
-            Technologies I use across my projects, grouped by the work they help me do.
+            A snapshot of the technologies that have found their way into my projects so far.
           </p>
         </div>
 
